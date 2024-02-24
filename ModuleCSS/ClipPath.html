@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip Path</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+   />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .bottomPoint{
+            background: url(../ModuleCSS/image/sky.jpeg)no-repeat center/cover ;
+            clip-path: polygon(100% 0, 100% 70%, 52% 89%, 0 69%, 0 0);
+            width: 100%;
+            height: 700px;
+            position: relative;
+        }
+        .box{
+            display: flex;
+            position: absolute;
+            top: 100px;
+        }
+        .left{
+            display: flex;
+            border: 1px solid rgb(15, 14, 14);
+            gap: 5px;
+            width: 150px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-left: 10%;
+        }
+        .logo1{
+            background-color: rgb(249, 245, 245);
+            color: rgb(13, 12, 12);
+            width: 30px;
+            padding: 1px;
+        }
+        .logo2{
+            color: white;
+        }
+        .right{
+            display: flex;
+            gap: 30px;
+            margin-left: 70%;
+        }
+        .navbar a{
+            color: red;
+            font-size: 20px;
+        }
+        li{
+            display: flex;
+            gap: 50px;
+            font-size: 20px;
+            list-style: none;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+        }
+        .about{
+            display: flex;
+        }
+        .content{
+            text-align: center;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            top: 35%;
+        }
+        h6{
+            font-size: 20px;
+        }
+        .content h1{
+            font-size: 70px;
+        }
+        .parent{
+            display: flex;
+            width: 200px;
+            align-items: center;
+            margin: auto;
+       }
+       .point{
+            width: 10px;
+       }
+       .line{
+             border: 1px solid black;
+             width: 80px;
+             height: 0px;
+             margin: 3px 3px 0px 3px;
+       }
+       .content p{
+        margin:20px 470px;
+       }
+       .get{
+            width: 150px;
+            padding: 10px;
+            font-size: 10px;
+            border: 1px solid red;
+            background-color: red;
+            color: white;
+       }
+       .more{
+            width: 150px;
+            padding: 10px;
+            font-size: 10px;
+            border: 1px solid rgb(251, 249, 249);
+            background-color: transparent;
+            color: white;
+       }
+       .box-1{
+            font-size: 30px;
+            position: absolute;
+            top: 150%;
+            left: 50%;
+            transform: rotate(90deg);
+            border-radius: 59px;
+            background-color: white;
+      }
+      .sider #right{
+            position: absolute;
+            top: 40%;
+            left: 95%;
+      }
+      .sider #left{
+            position: absolute;
+            top: 40%;
+            left: 30px;
+      }
+      #right{
+            background-color: rgb(252, 5, 5);
+            padding: 10px;
+            border: 0;
+            outline: 0;
+      }
+      #left{
+            background-color: rgb(123, 120, 120);
+            padding: 10px;
+            border: 0;
+            outline: 0;
+      }
+      .row1{
+            display: flex;
+            width: 10px;
+            text-align: center;
+            margin-left: 28%;
+            gap: 50px;
+      }
+      .infinity{
+            border: 1px solid black;
+            width: 40px;
+            padding: 10px;
+            margin: 20px 50px;
+      }
+      .infinity1{
+            border: 1px solid red;
+            width: 40px;
+            padding: 10px;
+            margin: 20px 0px;
+            transform: translateX(50px) rotate(45deg);
+      }
+    .row1 h6{
+            width: 100px;
+            font-size: 10px;
+            margin: 10px 20px;
+      }
+    .row1 .line{
+            width: 10px;
+            margin: 10px 65px;
+      }
+      .row1 p{
+            width: 150px;
+            font-size: 7px;
+      }
+      .sleek{
+            width: 100px;
+            font-size: 10px;
+            margin-left: 20px;
+            color: red;
+    }
+    </style>
+</head>
+<body>
+    <h1>. Clip Path</h1>
+    <div class="bottomPoint"></div>
+    <div class="box">
+        <div class="left">
+            <div class="logo1">L</div>
+            <div class="logo2">ogo</div>
+        </div>
+        <div class="right">
+            <div class="navbar"><a href="">HOME</a></div>
+                    <li><a href="" class="about">ABOUT</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">PRICING</a></li>
+                    <li><a href="">TEAM</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+        </div>
+    </div>
+    <div class="content">
+        <h6>Our Clients Are Our First Priority</h6>
+        <h1>WELCOME TO SKY</h1>
+        <div class="parent">
+            <div class="line"></div>
+            <div class="imge"><img src="../ModuleCSS/image/point.png" class="point" alt=""></div>
+            <div class="line"></div>
+        </div>
+        <p>Lorem ipsum, is simply dummy text of the printing and tyepsetting indutry. Lorem ipsum has been the indutry's standard dummy text ever since the 1500s. when an unknow printer took a galley of type and scrambled it ok make a type specimen book.</p>
+
+        <div class="row">
+            <button class="get">GET STARTED NOW</button>
+            <button class="more">LEARN MORE</button>
+        </div>
+        <div class="box-1">
+            <i class="fa-brands fa-usb" style="color: #e4071d;"></i>
+        </div>
+        <div class="sider">
+            <button id="right"><i class="fa-solid fa-angle-right" style="color: rgb(247, 244, 244);"></i></button>
+            <button id="left"><i class="fa-solid fa-angle-left" style="color: rgb(12, 12, 12);"></i></button>
+        </div>
+    </div>
+    <div class="row1">
+        <div class="col-1">
+            <div class="infinity1"><i class="fa-solid fa-infinity" style="color: #f9010e;"></i></div>
+            <h6 class="sleek">SLEEK DESIGN</h6>
+            <div class="line"></div>
+            <p>Lorem ipsum is simpty dummy text of the printing and tyepsetting let. Lorem ipsum has been the indutry.</p>
+        </div>
+        <div class="col-2">
+            <div class="infinity"><i class="fa-regular fa-heart" style="color: #fc0303;"></i></div>
+            <h6>CLEAN CODE</h6>
+            <div class="line"></div>
+            <p>Lorem ipsum is simpty dummy text of the printing and tyepsetting let. Lorem ipsum has been the indutry.</p>
+        </div>
+        <div class="col-3">
+            <div class="infinity"><i class="fa-regular fa-lightbulb" style="color: #fa0505;"></i></div>
+            <h6>CREATIVE IDEAS</h6>
+            <div class="line"></div>
+            <p>Lorem ipsum is simpty dummy text of the printing and tyepsetting let. Lorem ipsum has been the indutry.</p>
+        </div>
+        <div class="col-4">
+            <div class="infinity"><i class="fa-regular fa-message" style="color: #fe010e;"></i></div>
+            <h6>FREE SUPPORT</h6>
+            <div class="line"></div>
+            <p>Lorem ipsum is simpty dummy text of the printing and tyepsetting let. Lorem ipsum has been the indutry.</p>
+        </div>
+    </div>
+</body>
+</html>

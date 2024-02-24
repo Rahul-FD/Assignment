@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple background one side bg-color other side contain image as bg</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+   />
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    img{
+        width: 100%;
+    }
+    .box{
+        background-color: rgb(70, 69, 69);
+        color: white;
+        display: flex;
+        gap: 50px;
+        text-align: right;
+        position: relative;
+    }
+    .contant{
+        margin-top: 150px;
+    }
+    .heading{
+        display: flex;
+        gap: 10px;
+        margin-left: 470px;
+    }
+    h3{
+        font-size: 20px;
+        margin-top: 8px;
+    }
+    h2{
+        color: red;
+        font-size: 25px;
+        margin-top: 2px;
+    }
+    h4{
+        color: red;
+        font-size: 20px;
+    }
+    .font{
+        text-align: right;
+    }
+    .box-1,.box-2,.box-3{
+        margin-top: 50px;
+    }
+    .bg{
+        width: 850px;
+    }
+    .contener p{
+        margin: 10px 0px 10px 100px;
+    }
+    .tv,.print,.camera{
+        border: 15px solid white;
+        background-color: white;
+        border-radius: 30px;
+    }
+    .icon1{
+        position: absolute;
+        top: 280px;
+        left: 665px;
+    }
+    .icon2{
+        position: absolute;
+        top: 400px;
+        left: 665px;
+    }
+    .icon3{
+        position: absolute;
+        top: 510px;
+        left: 665px;
+    }
+    .line{
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+    }
+    .red{
+        color: red;
+    }
+    .gr{
+        color: gray;
+    }
+   </style>
+</head>
+<body>
+    <h1>. Multiple background one side bg-color other side contain image as bg</h1>
+    <div class="box">
+        <div class="col-50">
+            <div class="contant">
+                <div class="heading">
+                    <h3>OUR SERBICES</h3><h2>|</h2>
+                </div>
+                <div class="contener">
+                    <div class="box-1">
+                        <div class="text">
+                            <h4>WEB DESIGN</h4>
+                            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text over.</p>
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="text">
+                            <h4>PRINT DESIGN</h4>
+                            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text over.</p>
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="text">
+                            <h4>PHOTOGARAPHY</h4>
+                            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text over.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-50"><img src="../ModuleCSS/image/bg.jpg" class="bg" alt=""></div>
+    </div>
+    <div class="icon1">
+        <div class="tv"><i class="fa-solid fa-tv" style="color: #f1041b;"></i></div>
+    </div>
+    <div class="icon2">
+        <div class="print"><i class="fa-solid fa-print" style="color: #f90126;"></i></div>
+    </div>
+     <div class="icon3">
+        <div class="camera"><i class="fa-solid fa-camera" style="color: #f7021b;"></i></div>
+     </div>  
+     <div class="line">
+        <div class="gr">|</div>
+        <div class="red">|</div>
+        <div class="gr">|</div>
+     </div> 
+</body>
+</html>

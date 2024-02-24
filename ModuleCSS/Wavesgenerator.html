@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave generator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .dark{
+            background: url(../ModuleCSS/image/dark.jpg);
+            height: 700px;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .dark .waves{
+            background-color: transparent;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+        }
+        .imag1,.imag2,.imag3,.imag4,.imag5{
+            width: 60px;
+            border: 5px solid red;
+            border: 0;
+            outline: 0
+        }
+        .imag1{
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            position: absolute;
+            top: 300px;
+            left: 50px;
+        }
+        
+        .imag2{
+            width: 50px;
+            height: 50px;
+            border-radius: 60px;
+            position: absolute;
+            top: 290px;
+            left: 200px;
+        }
+        
+        .imag3{
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            position: absolute;
+            top: 250px;
+            left: 350px;
+        }
+        
+        .imag4{
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            position: absolute;
+            top: 290px;
+            left: 530px;
+        }
+        
+        .imag5{
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            position: absolute;
+            top: 245px;
+            left: 700px;
+        }
+        .content{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: absolute;
+            top: 250px;
+            left: 35%;
+        }
+        .content p{
+            margin-top: 20px;
+        }
+        .parent{
+            display: flex;
+            width: 200px;
+            align-items: center;
+            margin: 20px 0px 0px 80px;
+        }
+        .point{
+            width: 10px;
+        }
+        .line{
+            border: 1px solid rgb(251, 249, 249);
+            width: 80px;
+            height: 0px;
+            margin: 3px 3px 0px 3px;
+        }
+        .box-1{
+            position: absolute;
+            top: 620px;
+            left: 330px;
+        }
+        .box-1 .text{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .des{
+            font-size: 30px;
+            margin-left: 100px;
+        }
+        .box-1 h1{
+            font-size: 30px;
+            color: rgb(200, 29, 29);
+        }
+        .box-1 p{
+            font-size: 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>. using css waves generator</h1>
+    <div class="dark">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff8" fill-opacity="1" d="M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,128C672,96,768,96,864,128C960,160,1056,224,1152,208C1248,192,1344,96,1392,48L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </div>
+    <div class="box">
+        <div class="imag1"><img src="../ModuleCSS/image/man1.jpg" class="imag1" alt=""></div>
+        <div class="imag2"><img src="../ModuleCSS/image/man 2.jpg" class="imag2" alt=""></div>
+        <div class="imag3"><img src="../ModuleCSS/image/man3.jpg" class="imag3" alt=""></div>
+        <div class="imag4"><img src="../ModuleCSS/image/man4.jpg" class="imag4" alt=""></div>
+        <div class="imag5"><img src="../ModuleCSS/image/man5.jpg" class="imag5" alt=""></div>
+    </div>
+    <div class="content">
+        <h1>OUR TEAM</h1>
+        <p>Meet the craziest tearm. share your thoughts with there</p>
+        <div class="parent">
+            <div class="line"></div>
+            <div class="imge"><img src="../ModuleCSS/image/red.jpg" class="point" alt=""></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="box-1">
+        <div class="des">|</div>
+        <div class="text">
+            <h1>WEB DESIGNER</h1>
+            <P>UI/UX Designer</P>
+        </div>
+    </div>
+</body>
+</html>
