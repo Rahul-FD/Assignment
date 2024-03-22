@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQWuery Practical</title>
+
+    <!-- Custom CSS -->
+
+    <style>
+        *{
+            margin: 10px;
+        }
+        input{
+            width: 90%;
+        }
+        .great-grandparent{
+            width: 50%;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="great-great-grandparent">
+        body(great-great-grand-parent)
+        <div class="great-grandparent">
+            div(great-grandparent)
+            <div class="grandparent">
+                ul(grandparent)
+                <div class="parent">
+                    li(direct parent)
+                    <div><input type="text" placeholder="span"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery  -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- CSS JQuery  -->
+
+    <script>
+        $("body").css({ backgroundColor: "withe", color: "red", fontSize: "18px" });
+   
+    </script>
+
+<script>
+    // console.log($);
+
+    $(document).ready(function () {
+        
+
+        // children 
+
+        $(".grandparent").children().css({border: "3px solid red"})
+        $(".great-grandparent").children().css({border: "3px solid red"})
+        $(".great-great-grandparent").children().css({border: "3px solid red"})
+        $("body").children().css({border: "3px solid red"})
+        $("html").children().css({border: "3px solid red"})
+
+
+        // parents 
+
+        $(".great-grand-parent").find(".parent").css({border: "3px solid red", padding: "25px"})
+
+    })
+
+</script>
+</body>
+</html>
