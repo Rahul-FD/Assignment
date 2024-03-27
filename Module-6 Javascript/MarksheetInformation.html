@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet for Information Technology</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            align-items: center;
+        }
+        body{
+            justify-content: center;
+            align-items: center;
+        }
+        #box h4{
+            margin: 10px 100px 20px 0px;
+        }
+        #box h5{
+            margin: 10px 0px 20px 0px;
+        }
+        #box{
+            text-align: center;
+            border: 3px solid black;
+            width: 40%;
+            margin: 50px 50px;
+        }
+        
+        div input[type=number]{
+            width: 30%;
+            font-size: 18px;       
+        }
+        #box label{
+            display: flex;
+            margin-left: 40px;
+        }
+        .row{
+            display: flex;
+            gap: 50px;
+            margin: 20px 0px; 
+        }
+        button{
+            width: 70px;
+        }
+        .row .total,.percentage{
+            display: flex;
+            gap: 10px;
+            width: 209px;
+            font-size: 19px;
+            border: 0;
+            outline: 0;
+            text-align: center;
+            color: rgb(34, 34, 132);
+        }
+        
+    </style>
+</head>
+<body>
+    <b>. Create result</b>
+    <div id="box">
+        <h4>Marksheet for Information Technology</h4>
+        <h5>Enter Marks</h5>
+        <label>1. C Language </label><input type="text" id="num1">
+        <label>2. C++ Language </label><input type="text" id="num2">
+        <label>3. Database </label><input type="text" id="num3">
+        <label>4. HTML </label><input type="text" id="num4">
+        <label>5. CSS </label><input type="text" id="num5">
+        <label>6. php </label><input type="text" id="num6">
+        <label>7. Core java </label><input type="text" id="num7">
+        <br><br>
+        <button onclick="handleEvent()">Result</button>
+        <br><br>
+        <div class="row">
+           <div class="total">Total is :<div id="one"></div>/350</div>
+           <div class="percentage">percentage is :<div id="two"></div>%</div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+
+    <script>
+        function handleEvent() {
+            let n1 = document.getElementById('num1')
+            let n2 = document.getElementById('num2')
+            let n3 = document.getElementById('num3')
+            let n4 = document.getElementById('num4')
+            let n5 = document.getElementById('num5')
+            let n6 = document.getElementById('num6')
+            let n7 = document.getElementById('num7')
+
+            let sum = parseFloat(n1.value) + parseFloat(n2.value) + parseFloat(n3.value)
+            + parseFloat(n4.value) + parseFloat(n5.value) + parseFloat(n6.value) + parseFloat(n7.value)  
+            let sub = (sum/350) * 100
+
+            document.getElementById('one').innerText = sum
+            document.getElementById('two').innerText = sub
+            
+        }
+    </script>
+</body>
+</html>
